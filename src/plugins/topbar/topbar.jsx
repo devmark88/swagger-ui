@@ -130,7 +130,7 @@ export default class Topbar extends React.Component {
         <div className="wrapper">
           <div className="topbar-wrapper">
             <Link href="#">
-              <img height="30" width="30" src='/dist/logo.png' alt="Snapp"/>
+              <img height="30" width="30" src='/logo.png' alt="Snapp"/>
               <span>Snapp</span>
             </Link>
             <form className="download-url-wrapper" onSubmit={formOnSubmit}>

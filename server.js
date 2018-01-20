@@ -4,6 +4,7 @@ const pathToSwaggerUi = require("./dist").absolutePath()
 const app = express()
 app.use("/docs/v1.json",express.static(path.join(__dirname,"docs/v1/doc.v1.json")))
 app.use("/theme/mm.css",express.static(path.join(__dirname,"node_modules/swagger-ui-themes/themes/3.x/theme-monokai.css")))
+app.use("/logo.png",express.static(path.join(__dirname,"/dist/logo.png")))
 
 app.use(express.static(pathToSwaggerUi))
 app.listen(5000, function(error) {
